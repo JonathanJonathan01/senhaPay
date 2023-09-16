@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&family=Roboto:wght@700&display=swap");
+
+:root {
+  --fundo: #063970;
+  --branco: #ffffff;
+  --preto: #332f2e;
+  --link: #e9b837;
+}
+
+.background {
+  background-image: url("./imagens/fundo.jpg"); /* Caminho para a imagem de fundo */
+  background-size: cover; /* Para cobrir toda a tela */
+  background-position: center center; /* Centralizar a imagem */
+  background-repeat: no-repeat; /* Não repetir a imagem */
+  font-family: "Roboto", sans-serif;
+  transition: 1s;
+}
+
+.senhas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  width: auto;
+}
+.botao {
+  background-color: var(--fundo);
+  color: var(--branco);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 50px;
+  cursor: pointer;
+  margin: 10px; /* Espaço entre os botões */
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+  -moz-box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+  box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+
+  
+  -moz-border-radius: 76px 76px 76px 76px;
+  -webkit-border-radius: 76px 76px 76px 76px;
+  border-radius: 76px 76px 76px 76px;
+  border: 12px hidden #000000; 
+}
+
+#senhaGerada {
+  font-size: 60px;
+  margin-top: 20px;
+  color: var(--link);
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+}
+
+footer {
+  color: var(--branco);
+  position: fixed; /* Fixo */
+  bottom: 0;
+  height: 5vh; /* Define a posição */
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  margin: 15px;
+}
+
+a {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--link);
+  margin: 0px;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--branco);
+}
+
+.copy {
+  font-size: 20px;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 768px) {
+ 
+  .background {
+    background-image: url("./imagens/fundo.jpg"); /* Caminho para a imagem de fundo */
+    background-size: auto 100%; /* Para cobrir toda a tela */
+    background-position: right center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    transition: 1s;
+  }
+
+  .senhas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    width: auto;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .botao {
+    background-color: var(--fundo);
+    color: var(--branco);
+    padding: 10px 20px;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 10px; /* Espaço entre os botões */
+    font-family: "Roboto", sans-serif;
+    width: 350px;
+    -webkit-box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+    box-shadow: 10px 10px 6px 7px rgba(0,0,0,0.41);
+   
+    -moz-border-radius: 76px 76px 76px 76px;
+    -webkit-border-radius: 76px 76px 76px 76px;
+    border-radius: 76px 76px 76px 76px;
+    border: 12px hidden #000000;  
+  }
+
+ 
+}
+
+@media (max-width: 420px){
+  .background {
+    background-image: url("./imagens/fundo.jpg"); /* Caminho para a imagem de fundo */
+    background-size: auto 100%; /* Para cobrir toda a tela */
+    background-position: 93% 40%; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    transition: 1s;
+  }
+
+  footer {
+    color: var(--branco);
+    position: fixed; /* Fixo */
+    bottom: 0;
+    height: 8vh; /* Define a posição */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin: 25px;
+  }
+}

@@ -30,7 +30,7 @@ function gerarSenha(automacao) {
   }, 5000);
 
   // Mostra a senha
-  document.getElementById("senhaGerada").textContent = "Senha:" + valorSenha;
+  // document.getElementById("senhaGerada").textContent = "Senha:" + valorSenha;
   document.getElementById("senhaPay").textContent = "Senha:" + valorSenha;
   
 }
